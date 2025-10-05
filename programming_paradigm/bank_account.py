@@ -1,6 +1,6 @@
 
 class BankAccount:
-    def __init__(self, initial_balance=0):
+    def __init__(self, initial_balance=0.00):
         """Initialize the bank account with an optional initial balance."""
         self.__account_balance = initial_balance  # Encapsulated attribute
 
@@ -23,4 +23,4 @@ class BankAccount:
 
     def display_balance(self):
         """Display the current account balance."""
-        print(f"Current Balance: ${self.__account_balance}")
+        print(f"Current Balance: ${self.__account_balance:.2f}")
